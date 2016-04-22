@@ -1,0 +1,24 @@
+{
+  "name": "sloth_works",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bharding2/sloth_works.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bharding2/sloth_works/issues"
+  },
+  "homepage": "https://github.com/bharding2/sloth_works#readme"
+}
