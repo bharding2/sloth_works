@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/mocha/bin/mocha",
     "start": "node server.js"
   },
   "repository": {
@@ -16,9 +16,24 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bharding2/sloth_works/issues"
   },
-  "homepage": "https://github.com/bharding2/sloth_works#readme"
+  "homepage": "https://github.com/bharding2/sloth_works#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "eslint": "^2.8.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "koa": "^1.2.0",
+    "koa-body": "^1.4.0",
+    "koa-router": "^5.4.0",
+    "mongoose": "^4.4.13"
+  }
 }
