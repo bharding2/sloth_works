@@ -37,7 +37,6 @@ slothsRouter.put('/sloths/:id', koaBody, function* () {
       this.response.body = 'sloth updated';
     });
   });
-
 });
 
 slothsRouter.del('/sloths/:id', function* () {
