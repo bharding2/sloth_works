@@ -9,4 +9,4 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/slothDB');
 
 app.use(slothsRouter.routes());
 
-app.listen(PORT, () => console.log('server up on ' + PORT));
+module.exports = exports = app.listen(PORT, () => console.log('server up on ' + PORT));
