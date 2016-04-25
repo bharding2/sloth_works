@@ -33,15 +33,14 @@ slothsRouter.put('/sloths/:id', koaBody, function* () {
     doc.name = slothData.name;
     doc.toes = slothData.toes;
     doc.strength = slothData.strength;
-    doc.save(() => {
-      this.response.body = 'sloth updated';
-    });
+    doc.save();
+    this.response.body = { msg: 'sloth updated' };
   });
 });
 
 slothsRouter.del('/sloths/:id', function* () {
   yield Sloth.remove({ _id: this.params.id }, (err) => {
     if (err) return handleErr(err, this.response.body);
-    this.response.body = 'sloth removed';
+    this.response.body = { msg: 'sloth removed' };
   });
 });
